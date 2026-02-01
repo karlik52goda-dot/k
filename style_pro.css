@@ -1,0 +1,127 @@
+/* style2.css */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #001530;
+  color: #fff;
+  margin: 0;
+  scroll-behavior: smooth; /* Плавная прокрутка к секциям */
+}
+
+.header {
+  background-color: #380dad;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.header h1 {
+  font-size: clamp(28px, 5vw, 40px); /* Адаптивный размер шрифта */
+  margin: 0;
+}
+
+.header p {
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffe0ff;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav a:hover {
+  background-color: #a24fff;
+  color: white;
+}
+
+.banner-box {
+  margin-top: 20px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #ff55aa;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 15px;
+}
+
+.block {
+  background-color: #02004d;
+  border: 3px solid #6044f7;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 340px; /* Чтобы карточки не ломались на мобилках */
+  padding: 22px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+}
+
+.block:hover {
+  transform: translateY(-10px); /* Более современный эффект подъема */
+  border-color: #ff77aa;
+  box-shadow: 0 0 35px rgba(255,119,170,0.6);
+}
+
+.block h2 {
+  color: #ffccff;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.block p {
+  font-size: 16px;
+  color: #dbd8ff;
+  line-height: 1.6;
+}
+
+.block img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Чтобы картинки были одного размера и не деформировались */
+  border-radius: 12px;
+  border: 3px solid #8655f7;
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: #6a0dad;
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Настройки для мобильных экранов */
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+  .nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
